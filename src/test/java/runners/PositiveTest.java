@@ -23,7 +23,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
                 "com.cucumber.listener.ExtentCucumberFormatter"},
         features = "src/test/resources/FeatureFiles",
         glue = "steps",
-        tags = {"@Search-Cars"}        
+        tags = {"@Search-Cars"},
+        dryRun = false,
+        monochrome = true
+
         )
 
 public class PositiveTest  extends AbstractTestNGCucumberTests  {
